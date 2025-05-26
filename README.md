@@ -1,11 +1,80 @@
-# git basic commands:
-1. git initialize: git init
-2. add all files: git add .
-3. change default branch name: git branch -M {main} (*Optional)
-4. To commit files: git commit -m '{message}'
-5. Origin add (bind project and repo): git remote add origin {REPO URL}
-6. Push to github: git push origin -u(if first commit) {branch name}
+# 📘 Git Command Cheat Sheet
 
-<!-- working commands -->
-1. to switch or create new branch: git checkout -b (if creating new branch) branch_name
-2. 
+## 🔰 Basic Git Commands (Initial Setup)
+
+- **Initialize a Git repository:**
+  ```bash
+  git init
+  ```
+
+- **Add all files to staging:**
+  ```bash
+  git add .
+  ```
+
+- **Change default branch name (Optional):**
+  ```bash
+  git branch -M main
+  ```
+
+- **Commit staged files:**
+  ```bash
+  git commit -m "your commit message"
+  ```
+
+- **Bind local project with GitHub repository:**
+  ```bash
+  git remote add origin <REPO_URL>
+  ```
+
+- **Push to GitHub (first-time push):**
+  ```bash
+  git push -u origin main
+  ```
+
+## 🛠️ Daily Workflow Commands
+
+- **Create and switch to a new branch (or just switch if exists):**
+  ```bash
+  git checkout -b branch_name
+  ```
+
+- **Stage all changes:**
+  ```bash
+  git add .
+  ```
+
+- **Temporarily save current changes (stash):**
+  ```bash
+  git stash
+  ```
+
+- **Fetch latest changes from remote:**
+  ```bash
+  git fetch
+  ```
+
+- **Pull latest changes from main branch:**
+  ```bash
+  git pull origin main
+  ```
+
+- **Apply previously stashed changes:**
+  ```bash
+  git stash pop
+  ```
+
+- **Stage changes again after resolving conflicts (if any):**
+  ```bash
+  git add .
+  ```
+
+- **Commit your final changes:**
+  ```bash
+  git commit -m "your commit message"
+  ```
+
+- **Push your branch to remote:**
+  ```bash
+  git push origin branch_name
+  ```
